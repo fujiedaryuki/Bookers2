@@ -1,0 +1,15 @@
+<%= form_with model:book, local:true do |f| %>
+  <div class='form-group'>
+    <%= f.label :title, class:'control-label' %>
+    <%= f.text_field :title, class:'form-control input-sm' %>
+  </div>
+
+  <div class='form-group'>
+    <%= f.label :body, 'Opinion', class:'control-label' %>
+    <%= f.text_area :body, class:'form-control input-sm' %>
+  </div>
+
+  <div class='form-group'>
+    <br><%= f.submit 'Create Book', class:'btn btn-success' %></br>
+  </div>
+<% end %>
